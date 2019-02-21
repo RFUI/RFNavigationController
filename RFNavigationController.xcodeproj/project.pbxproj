@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D577C2DA221E8F5B00A36175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577C2D9221E8F5B00A36175 /* AppDelegate.swift */; };
+		D577C2DC221E8F5B00A36175 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577C2DB221E8F5B00A36175 /* ViewController.swift */; };
+		D577C2DE221E8F5D00A36175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D577C2DD221E8F5D00A36175 /* Assets.xcassets */; };
+		D577C2E1221E8F5D00A36175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D577C2DF221E8F5D00A36175 /* Main.storyboard */; };
+		D577C2ED221E8F5E00A36175 /* RFNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577C2EC221E8F5E00A36175 /* RFNavigationControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D577C2E9221E8F5E00A36175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D577C2CE221E8F5B00A36175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D577C2D5221E8F5B00A36175;
+			remoteInfo = RFNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D577C2D6221E8F5B00A36175 /* Example-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D577C2D9221E8F5B00A36175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D577C2DB221E8F5B00A36175 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D577C2DD221E8F5D00A36175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D577C2E0221E8F5D00A36175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D577C2E2221E8F5D00A36175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D577C2E3221E8F5D00A36175 /* RFNavigationController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RFNavigationController.entitlements; sourceTree = "<group>"; };
+		D577C2E8221E8F5E00A36175 /* Test-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D577C2EC221E8F5E00A36175 /* RFNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFNavigationControllerTests.swift; sourceTree = "<group>"; };
+		D577C2EE221E8F5E00A36175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D577C2D3221E8F5B00A36175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D577C2E5221E8F5E00A36175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D577C2CD221E8F5B00A36175 = {
+			isa = PBXGroup;
+			children = (
+				D577C2D8221E8F5B00A36175 /* Example */,
+				D577C2EB221E8F5E00A36175 /* Tests */,
+				D577C2D7221E8F5B00A36175 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D577C2D7221E8F5B00A36175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D577C2D6221E8F5B00A36175 /* Example-macOS.app */,
+				D577C2E8221E8F5E00A36175 /* Test-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D577C2D8221E8F5B00A36175 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				D577C2D9221E8F5B00A36175 /* AppDelegate.swift */,
+				D577C2DB221E8F5B00A36175 /* ViewController.swift */,
+				D577C2DD221E8F5D00A36175 /* Assets.xcassets */,
+				D577C2DF221E8F5D00A36175 /* Main.storyboard */,
+				D577C2E2221E8F5D00A36175 /* Info.plist */,
+				D577C2E3221E8F5D00A36175 /* RFNavigationController.entitlements */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		D577C2EB221E8F5E00A36175 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D577C2EC221E8F5E00A36175 /* RFNavigationControllerTests.swift */,
+				D577C2EE221E8F5E00A36175 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D577C2D5221E8F5B00A36175 /* Example-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D577C2F1221E8F5E00A36175 /* Build configuration list for PBXNativeTarget "Example-macOS" */;
+			buildPhases = (
+				D577C2D2221E8F5B00A36175 /* Sources */,
+				D577C2D3221E8F5B00A36175 /* Frameworks */,
+				D577C2D4221E8F5B00A36175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-macOS";
+			productName = RFNavigationController;
+			productReference = D577C2D6221E8F5B00A36175 /* Example-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D577C2E7221E8F5E00A36175 /* Test-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D577C2F4221E8F5E00A36175 /* Build configuration list for PBXNativeTarget "Test-macOS" */;
+			buildPhases = (
+				D577C2E4221E8F5E00A36175 /* Sources */,
+				D577C2E5221E8F5E00A36175 /* Frameworks */,
+				D577C2E6221E8F5E00A36175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D577C2EA221E8F5E00A36175 /* PBXTargetDependency */,
+			);
+			name = "Test-macOS";
+			productName = RFNavigationControllerTests;
+			productReference = D577C2E8221E8F5E00A36175 /* Test-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D577C2CE221E8F5B00A36175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = RFUI;
+				TargetAttributes = {
+					D577C2D5221E8F5B00A36175 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D577C2E7221E8F5E00A36175 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D577C2D5221E8F5B00A36175;
+					};
+				};
+			};
+			buildConfigurationList = D577C2D1221E8F5B00A36175 /* Build configuration list for PBXProject "RFNavigationController" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D577C2CD221E8F5B00A36175;
+			productRefGroup = D577C2D7221E8F5B00A36175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D577C2D5221E8F5B00A36175 /* Example-macOS */,
+				D577C2E7221E8F5E00A36175 /* Test-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D577C2D4221E8F5B00A36175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D577C2DE221E8F5D00A36175 /* Assets.xcassets in Resources */,
+				D577C2E1221E8F5D00A36175 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D577C2E6221E8F5E00A36175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D577C2D2221E8F5B00A36175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D577C2DC221E8F5B00A36175 /* ViewController.swift in Sources */,
+				D577C2DA221E8F5B00A36175 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D577C2E4221E8F5E00A36175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D577C2ED221E8F5E00A36175 /* RFNavigationControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D577C2EA221E8F5E00A36175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D577C2D5221E8F5B00A36175 /* Example-macOS */;
+			targetProxy = D577C2E9221E8F5E00A36175 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D577C2DF221E8F5D00A36175 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D577C2E0221E8F5D00A36175 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D577C2EF221E8F5E00A36175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D577C2F0221E8F5E00A36175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D577C2F2221E8F5E00A36175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RFNavigationController/RFNavigationController.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.RFUI.RFNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D577C2F3221E8F5E00A36175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RFNavigationController/RFNavigationController.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.RFUI.RFNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		D577C2F5221E8F5E00A36175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.RFUI.RFNavigationControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFNavigationController.app/Contents/MacOS/RFNavigationController";
+			};
+			name = Debug;
+		};
+		D577C2F6221E8F5E00A36175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.RFUI.RFNavigationControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFNavigationController.app/Contents/MacOS/RFNavigationController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D577C2D1221E8F5B00A36175 /* Build configuration list for PBXProject "RFNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D577C2EF221E8F5E00A36175 /* Debug */,
+				D577C2F0221E8F5E00A36175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D577C2F1221E8F5E00A36175 /* Build configuration list for PBXNativeTarget "Example-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D577C2F2221E8F5E00A36175 /* Debug */,
+				D577C2F3221E8F5E00A36175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D577C2F4221E8F5E00A36175 /* Build configuration list for PBXNativeTarget "Test-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D577C2F5221E8F5E00A36175 /* Debug */,
+				D577C2F6221E8F5E00A36175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D577C2CE221E8F5B00A36175 /* Project object */;
+}
