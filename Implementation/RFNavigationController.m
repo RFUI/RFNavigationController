@@ -107,3 +107,16 @@
 }
 
 @end
+
+
+@implementation RFNavigationPushSegue
+
+- (void)perform {
+    NSViewController *fromVC = self.sourceController;
+    NSViewController *toVC = self.destinationController;
+    NSAssert([fromVC isKindOfClass:NSViewController.class], @"sourceController must be an NSViewController");
+    NSAssert([toVC isKindOfClass:NSViewController.class], @"destinationController must be an NSViewController");
+    [fromVC.rfNavigationController pushViewController:toVC animated:true];
+}
+
+@end

@@ -11,27 +11,49 @@ class DemoWindowController: NSWindowController {
         return contentViewController as! RFNavigationController
     }
     
+    // MARK: - Pop
     @IBAction func navigationPop(_ sender: Any) {
         navigationController.popViewController(animated: true)
     }
     
+    // MARK: - Push
     @IBAction func pushA(_ sender: Any) {
-        pushVC(identifier: "vcA")
+        let vc = demoVC(identifier: "vcA")
+        navigationController.pushViewController(vc, animated: true)
     }
     @IBAction func pushB(_ sender: Any) {
-        pushVC(identifier: "vcB")
+        let vc = demoVC(identifier: "vcB")
+        navigationController.pushViewController(vc, animated: true)
     }
     @IBAction func pushC(_ sender: Any) {
-        pushVC(identifier: "vcC")
+        let vc = demoVC(identifier: "vcC")
+        navigationController.pushViewController(vc, animated: true)
     }
     @IBAction func pushD(_ sender: Any) {
-        pushVC(identifier: "vcD")
+        let vc = demoVC(identifier: "vcD")
+        navigationController.pushViewController(vc, animated: true)
     }
     
-    func pushVC(identifier: String) {
-        guard let vc = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: identifier) as? NSViewController else {
-            fatalError()
+    // MARK: - Setting
+    @IBAction func onSettingVCs(_ sender: NSPopUpButton) {
+        guard let token = sender.selectedItem?.title else { return }
+        let vcs: [NSViewController] = token.split(separator: ",").compactMap { id -> NSViewController? in
+            return staticVCMap[String(id)]
         }
-        navigationController.pushViewController(vc, animated: true)
+        navigationController.setViewControllers(vcs, animated: true)
+        print(navigationController.viewControllers.debugDescription)
+    }
+    private lazy var staticVCMap: [String: NSViewController] = {
+        return [
+            "A": demoVC(identifier: "vcA"),
+            "B": demoVC(identifier: "vcB"),
+            "C": demoVC(identifier: "vcC"),
+            "D": demoVC(identifier: "vcD"),
+                ]
+    }()
+    
+    // MARK: -
+    private func demoVC(identifier: String) -> NSViewController {
+        return NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: identifier) as! NSViewController
     }
 }

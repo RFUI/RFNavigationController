@@ -23,5 +23,12 @@
 - (nullable NSViewController *)popViewControllerAnimated:(BOOL)animated;
 
 @property (readonly, nullable) NSViewController *topViewController;
-@property (readonly, nonatomic) NSArray<__kindof NSViewController *> *viewControllers;
+@property (readonly, nonnull, nonatomic) NSArray<__kindof NSViewController *> *viewControllers;
+@end
+
+/**
+ 
+ */
+@interface RFNavigationPushSegue : NSStoryboardSegue
+
 @end

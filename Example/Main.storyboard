@@ -702,11 +702,11 @@
                                 <toolbarItem implicitItemIdentifier="0624FFB3-17D4-4C31-85E5-B39EEDD6D774" label="Push VC" paletteLabel="Push VC" tag="-1" sizingBehavior="auto" id="Rsj-LN-5lT">
                                     <nil key="toolTip"/>
                                     <stackView key="view" distribution="fillEqually" orientation="horizontal" alignment="top" spacing="2" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="ptP-Xn-Vlg">
-                                        <rect key="frame" x="0.0" y="14" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="14" width="156" height="28"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hpo-ns-QbZ">
-                                                <rect key="frame" x="-6" y="2" width="49" height="32"/>
+                                                <rect key="frame" x="-6" y="0.0" width="49" height="32"/>
                                                 <buttonCell key="cell" type="push" title="A" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s5K-7O-yQL">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -716,7 +716,7 @@
                                                 </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yaE-tq-b7H">
-                                                <rect key="frame" x="33" y="2" width="49" height="32"/>
+                                                <rect key="frame" x="33" y="0.0" width="49" height="32"/>
                                                 <buttonCell key="cell" type="push" title="B" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Joa-Eb-31h">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -726,7 +726,7 @@
                                                 </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="61T-gJ-Jpz">
-                                                <rect key="frame" x="72" y="2" width="50" height="32"/>
+                                                <rect key="frame" x="72" y="0.0" width="50" height="32"/>
                                                 <buttonCell key="cell" type="push" title="C" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Te6-YG-BId">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -736,7 +736,7 @@
                                                 </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qd7-qa-o8h">
-                                                <rect key="frame" x="112" y="2" width="50" height="32"/>
+                                                <rect key="frame" x="112" y="0.0" width="50" height="32"/>
                                                 <buttonCell key="cell" type="push" title="D" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2jF-ka-XMo">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -747,7 +747,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="sP4-oa-YeZ"/>
+                                            <constraint firstAttribute="height" constant="28" id="sP4-oa-YeZ"/>
                                         </constraints>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
@@ -763,11 +763,35 @@
                                         </customSpacing>
                                     </stackView>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="F7F6A93F-3A2F-45B1-8EEE-FD808052C1AF" label="Set VCs" paletteLabel="Set VCs" sizingBehavior="auto" id="VdG-fW-kcy">
+                                    <nil key="toolTip"/>
+                                    <popUpButton key="view" verticalHuggingPriority="750" id="6dZ-hV-AIY">
+                                        <rect key="frame" x="0.0" y="14" width="100" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <popUpButtonCell key="cell" type="roundTextured" title="A" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="w8R-yk-I0O" id="thf-iP-xUQ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="xf0-ep-mAt">
+                                                <items>
+                                                    <menuItem title="A" id="w8R-yk-I0O"/>
+                                                    <menuItem title="A,B,C" state="on" id="35h-W5-TtH"/>
+                                                    <menuItem title="A,B" id="jeS-Q9-7Yt"/>
+                                                    <menuItem title="B" id="xTt-dQ-7DJ"/>
+                                                    <menuItem title="B,C" id="gsk-v2-GxD"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                        <connections>
+                                            <action selector="onSettingVCs:" target="B8D-0N-5wS" id="Bdr-NC-MD3"/>
+                                        </connections>
+                                    </popUpButton>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="AwC-s5-2KE"/>
                                 <toolbarItem reference="Rsj-LN-5lT"/>
                                 <toolbarItem reference="D4B-6R-3Rh"/>
+                                <toolbarItem reference="VdG-fW-kcy"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -841,6 +865,17 @@ Tap toolbar button to switch view controller.</string>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSS-87-GJJ">
+                                            <rect key="frame" x="74" y="150" width="151" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Push Using Segue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wyS-J9-u8O">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <segue destination="G0h-56-whG" kind="custom" customClass="RFNavigationPushSegue" id="QB6-mo-fP4"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <color key="fillColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
@@ -911,7 +946,7 @@ Tap toolbar button to switch view controller.</string>
                 </viewController>
                 <customObject id="xxk-wE-cX4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="640"/>
+            <point key="canvasLocation" x="569" y="690"/>
         </scene>
         <!--C-->
         <scene sceneID="mn5-TQ-6hr">
