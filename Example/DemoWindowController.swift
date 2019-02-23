@@ -57,3 +57,21 @@ class DemoWindowController: NSWindowController {
         return NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: identifier) as! NSViewController
     }
 }
+
+class DemoWindow: NSWindow {
+    // Force window reszing to be animated.
+    // Since our navigation controller doesn't know how to manage the window, also it's shouldn't know it.
+    // Window management will never be a built-in feature.
+    // The following solution is for testing purposes only, use on your own risk.
+    private var _frameAnimationFlag = false
+    override func setFrame(_ frameRect: NSRect, display flag: Bool) {
+        if _frameAnimationFlag {
+            super.setFrame(frameRect, display: flag)
+            _frameAnimationFlag = false
+        }
+        else {
+            _frameAnimationFlag = true
+            self.animator().setFrame(frameRect, display: flag)
+        }
+    }
+}
